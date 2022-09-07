@@ -7,8 +7,9 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    min-width: 1300px;
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 .header {
@@ -45,15 +46,15 @@ li {
     list-style-type: none;
 }
 
-button {
-    color: #E5E7EB;
+.herobutton {
+    display: flex;
+    justify-content: center;
+    margin-top: 24px;
+    color: #ffffff;
     background-color: #3882F6;
     font-weight: 900;
-    justify-content: flex-start;
     width: 100px;
-    padding: 5px;
-
-    margin-top: 24px;
+    padding: 5px;    
     border-radius: 5px;
 }
 
@@ -68,8 +69,9 @@ button {
 .herobox {
     display: flex;
     /* flex-direction: column; */
-    align-items: flex-start;
+    align-items: center;
     justify-content: space-between;
+    align-content: space-between;
 }
 
 .leftbox {
@@ -78,7 +80,7 @@ button {
     justify-content: flex-start;
 }
 
-h1 {
+.heroheader {
     color: #F9FAF8;
     font-size: 48px;
     font-weight: 900;
@@ -96,6 +98,9 @@ h1 {
     display: flex;
     flex-grow: 0;
     align-self: stretch;
+    opacity: 0.9;
+    border-radius: 3px;
+    border: 5px solid #E5E7EB;
 }
 
 .info {
@@ -150,7 +155,6 @@ h1 {
 
 .quotep {
     max-width: 80%;
-    text-align: center;
     color: #1F2937;
     font-style: italic;
     font-weight: 100;
@@ -160,11 +164,13 @@ h1 {
 .author {
     max-width: 80%;
     align-self: flex-end;
+    font-size: 16px;
+    font-weight: bold;
 }
 .actioncontainer {
     display:flex;
     justify-content: center;
-    padding: 40px;
+    padding: 100px;
 }
 
 .action {
@@ -173,17 +179,27 @@ h1 {
     background-color: #3882F6;
     width: 1000px;
     height: 150px;
-    border-radius: 15px;
-    /* justify-content: center; */
+    border-radius: 10px;
+    justify-content: space-between;
     padding: 30px;
+    padding-right: 120px;
+}
+
+.actionheader {
+    font-size: 24px;
+    color: #ffffff;
+    margin-bottom: 0;
 }
 
 .actiontext {
+    margin-top: 0px;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
     padding-left: 100px;
-    font-size: 24px;
+    padding-right: 20px;
+    font-size: smaller;
+    color: #ffffff;
 }
 
 .footer {
@@ -191,5 +207,20 @@ h1 {
     justify-content: center;
     background-color:#1F2937;
     color:#E5E7EB;
-    padding: 20px;
+    padding: 40px;
+    font-size: 16px;
+}
+
+.actionbutton {
+    width: auto;
+    justify-content: center;
+    padding-right: 100px;
+    align-self: center;
+    color: #ffffff;
+    background-color: #3882F6;
+    font-weight: 900;
+    width: 100px;
+    padding: 5px;    
+    border-radius: 5px;
+    border: 2px solid white;
 }
